@@ -10,5 +10,9 @@ namespace BakeryStock.Models
 
         [Required(ErrorMessage = "Campo \" {0} \" é obrigatorio")]
         public string? Nome { get; set; }
+
+        public List<Produto> Produtos { get; set; } = new();
+
+        public ProdutoTabela? ProdutoTabela_ID { get; set; }
     }
 }

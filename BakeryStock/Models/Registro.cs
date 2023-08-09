@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BakeryStock.Models
 {
@@ -9,16 +10,21 @@ namespace BakeryStock.Models
 
         //Usuario_ID
 
-        //Tabela_ID
+        public Tabela? Tabela_ID { get; set; }
 
-        //Item_ID
+        public Produto? Produto_ID { get; set; }
 
         public int Quantidade { get; set; }
 
-        // Tipo de modificação (Entrada ou Saida)
+        [Required(ErrorMessage = "Campo \" {0} \" é obrigatorio")]
+        public TipoModificacao Tipo { get; set; }
 
-        public string? Descrição { get; set; }
+        [Required(ErrorMessage = "Campo \" {0} \" é obrigatorio")]
+        [Display(Name = "Descrição")]
+        public string? Descricao { get; set; }
 
         public string? Data { get; set; }
     }
+
+    public enum TipoModificacao {Saida, Entrada}
 }
