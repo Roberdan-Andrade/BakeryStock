@@ -1,18 +1,18 @@
-html {
-  font-size: 14px;
+.header_background {
+    height: 10vh;
+    width: 100vw;
+
+    background-color: #F6BBA7;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+.main_background {
+    width: 100vw;
+
+    background-color: #001F3D;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin-bottom: 60px;
+.footer_background {
+    height: 10vh;
+    width: 100vw;
+    background-color: #26619C;
 }

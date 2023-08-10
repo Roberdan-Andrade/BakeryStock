@@ -1,0 +1,18 @@
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace BakeryStock.Models
+{
+    [Table("Tabelas")]
+    public class Tabela
+    {
+        public int Id { get; set; }
+
+        [Required(ErrorMessage = "Campo \" {0} \" é obrigatorio")]
+        public string? Nome { get; set; }
+
+        public List<Produto> Produtos { get; set; } = new();
+
+        public ProdutoTabela? ProdutoTabela_ID { get; set; }
+    }
+}
