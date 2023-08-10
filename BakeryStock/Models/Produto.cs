@@ -18,6 +18,6 @@ namespace BakeryStock.Models
         [Display(Name = "Valor de compra")]
         public float? Preço { get; set; }
 
-        public List<Tabela> Tabelas { get; set; } = new ();
+        public List<Tabela> Tabelas { get; set; } = new();
     }
 }
