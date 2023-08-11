@@ -1,8 +1,45 @@
 .header_background {
-    height: 10vh;
-    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1em 2em;
 
     background-color: #F6BBA7;
+}
+
+.logo-img {
+    height: 50px;
+    width: 50px;
+}
+
+.logo-txt {
+    font-size: 2em;
+}
+
+.nave {
+
+}
+
+.nave-list {
+    display: flex;
+    align-items: center;
+}
+
+.nave-item {
+
+}
+
+.nave-link {
+    font-size: 1.75em;
+    font-weight: 700;
+
+    margin: 0 0.5em;
+    padding: 0.2em 1em;
+
+    color: #000000;
+    background-color: #EBAD37;
+    border: 1px solid #ffffff;
+    border-radius: 0.2em;
 }
 
 .main_background {
