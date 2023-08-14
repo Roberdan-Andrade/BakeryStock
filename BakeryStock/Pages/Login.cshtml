@@ -13,8 +13,8 @@
 
         <nav class="nave">
             <ul class="nave-list">
-                <li class="nave-item"><a class="nave-link" href="../Pages/Index.cshtml">Home</a></li>
-                <li class="nave-item"><a class="nave-link" href="../Pages/CreateAccount.cshtml">Criar conta</a></li>
+                <li class="nave-item"><a class="nave-link" asp-page="/Index">Home</a></li>
+                <li class="nave-item"><a class="nave-link" asp-page="/CreateAccount">Criar conta</a></li>
             </ul>
         </nav>
     </div>
@@ -41,12 +41,12 @@
                                             </div>
                                             <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
                                                 <a class="small" href="password.html">Esqueceu sua senha?</a>
-                                                <a class="btn btn-primary" href="index.html">Login</a>
+                                            <a class="btn btn-primary" asp-page="/index">Login</a>
                                             </div>
                                         </form>
                                     </div>
                                     <div class="card-footer text-center py-3">
-                                        <div class="small"><a href="CreateAccount.cshtml">Ainda não tem uma conta? Crie agora!</a></div>
+                                    <div class="small"><a asp-page="/CreateAccount">Ainda não tem uma conta? Crie agora!</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -61,6 +61,6 @@
 
 @section Footer{
     <div class="footer_background">
-        <p class="footer-txt">Copyright © - BakeryStock 2023 - <a class="footer-link" href="../Pages/Privacy.cshtml">Privacy</a> </p>
+        <p class="footer-txt">Copyright © - BakeryStock 2023 - <a class="footer-link" asp-page="/Privacy">Privacy</a> </p>
     </div>
 }
