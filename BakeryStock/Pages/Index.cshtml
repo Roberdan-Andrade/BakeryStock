@@ -6,28 +6,30 @@
 
 @section Header{
     <div class="header_background">
-        <div class="display-flex">
-            <img src="" class="logo-img" />
+        <div class="container-logo">
+            <img src="~/img/Logo_Temporaria.jpg" class="logo-img" />
             <h1 class="logo-txt">BakeryStock</h1>
         </div>
 
         <nav class="nave">
             <ul class="nave-list">
-                <li class="nave-item"><a class="nave-link">Entrar</a></li>
-                <li class="nave-item"><a class="nave-link">Cadastre-se</a></li>
+                <li class="nave-item"><a class="nave-link" href="../Pages/Login.cshtml">Entrar</a></li>
+                <li class="nave-item"><a class="nave-link" href="../Pages/CreateAccount.cshtml">Cadastre-se</a></li>
             </ul>
         </nav>
     </div>
 }
 
-<div>
-    <div class="main_background">
-        <p>aaaaaaa Main</p>
+<div class ="main_background">
+    <div class="introducao">
+        <h2 class="introducao-titulo">BakeryStock - O que somos</h2>
+        <p class="introducao-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent imperdiet, nibh sit amet finibus consectetur, leo diam ornare nulla, ut lobortis metus orci venenatis orci. Morbi egestas erat ut lectus suscipit aliquet. Proin est quam, tristique ac euismod a, malesuada vitae lacus. Maecenas porttitor lacinia iaculis. Aenean sit amet mattis.</p>
     </div>
+    <img src="~/img/Logo_Temporaria.jpg" class="introducao-img" />
 </div>
 
 @section Footer{
     <div class="footer_background">
-
+        <p class="footer-txt">Copyright © - BakeryStock 2023 - <a class="footer-link" href="../Pages/Privacy.cshtml">Privacy</a> </p>
     </div>
 }

@@ -1,0 +1,24 @@
+﻿html {
+    font-family: 'Poppins', sans-serif;
+}
+
+.tableSelection-header {
+    display: flex;
+
+    padding: 1.25em 2em;
+
+    background-color: #FFE2A5;
+}
+
+.header-user-info {
+    border: 2px solid #000000;
+    border-radius: 1em;
+
+    padding: 1em;
+
+    background-color: #FFCE6B;
+}
+
+.user-info-txt {
+    color: #000000;
+}

@@ -1,15 +1,29 @@
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
 .header_background {
     display: flex;
     justify-content: space-between;
 
-    padding: 1em 2em;
+    align-items: center;
 
-    background-color: #F6BBA7;
+    padding: 1.25em 2em;
+
+    background-color: #FFE2A5;
+}
+
+.container-logo {
+    display: flex;
 }
 
 .logo-img {
     height: 50px;
     width: 50px;
+
+    margin: 0 1em;
+
+    border-radius: 10em;
 }
 
 .logo-txt {
@@ -23,6 +37,8 @@
 .nave-list {
     display: flex;
     align-items: center;
+
+    margin-bottom: 0;
 }
 
 .nave-item {
@@ -37,19 +53,70 @@
     padding: 0.2em 1em;
 
     color: #000000;
-    background-color: #EBAD37;
+    background-color: #FFCE6B;
     border: 1px solid #ffffff;
     border-radius: 0.2em;
+
+    text-decoration:none;
 }
 
 .main_background {
-    width: 100vw;
+    display: flex;
 
-    background-color: #001F3D;
+    background-color: #26619C;
+}
+
+.introducao {
+    padding: 5em 2em 3.5em 2em;
+}
+
+.introducao-titulo {
+    font-size: 3.5em;
+    color: #ffffff;
+
+    padding: 0.5em 0 0 0;
+}
+
+.introducao-txt {
+    font-size: 1.25em;
+    color: #ffffff;
+
+    width: 40vw;
+
+    padding: 1em 0 0 2.5em ;
+}
+
+.introducao-img {
+    height: 350px;
+
+    align-self:center;
+
+    margin: 0 0 0 10em;
 }
 
 .footer_background {
-    height: 10vh;
-    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    background-color: #272727;
+
+    padding: 1em;
+}
+
+.footer-txt {
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+.footer-link {
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+
+.main_background--login {
     background-color: #26619C;
+
+    padding: 2em 0 3em 0;
 }
