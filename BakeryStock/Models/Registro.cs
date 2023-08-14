@@ -23,7 +23,7 @@ namespace BakeryStock.Models
         [Display(Name = "Descrição")]
         public string? Descricao { get; set; }
 
-        public string? Data { get; set; }
+        public DateTime? Data { get; set; }
     }
 
     public enum TipoModificacao {Saida, Entrada}

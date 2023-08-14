@@ -12,7 +12,5 @@ namespace BakeryStock.Models
         public string? Nome { get; set; }
 
         public List<Produto> Produtos { get; set; } = new();
-
-        public ProdutoTabela? ProdutoTabela_ID { get; set; }
     }
 }
