@@ -17,12 +17,14 @@ html {
     display: flex;
 }
 
+.txt-color {
+    color: #000000;
+}
+
 .logo-img {
     height: 50px;
     width: 50px;
-
     margin: 0 1em;
-
     border-radius: 10em;
 }
 
