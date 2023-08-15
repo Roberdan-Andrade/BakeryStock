@@ -15,18 +15,25 @@
     border: 2px solid #000000;
     border-radius: 1em;
 
-    padding: 0.25em 0.5em;
+    padding: 0.5em 0.75em;
 
     background-color: #FFCE6B;
 
     display: flex;
-    flex-direction: column;
 
+    flex-direction: column;
     justify-items: center;
 }
 
 .user-info-txt {
     color: #000000;
+
+    margin: 0;
+    padding: 0;
+}
+
+.user-info-span {
+
 }
 
 .header-nav {
@@ -35,7 +42,6 @@
 
 .header-nav-list {
     display: flex;
-    flex-direction: column;
 
     justify-content: center;
 
@@ -47,7 +53,7 @@
 }
 
 .header-nav-link {
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 700;
 
     margin-bottom: 0;
@@ -59,4 +65,8 @@
     border-radius: 0.2em;
 
     text-decoration: none;
+}
+
+.tableSelection-main {
+    background-color: #26619C;
 }
