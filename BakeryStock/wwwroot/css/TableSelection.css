@@ -74,3 +74,56 @@
 .tableSelection-main {
     background-color: #26619C;
 }
+
+.container_add-user {
+    display: flex;
+}
+
+.container_add-user-table {
+    display: flex;
+    flex-direction: column;
+
+    padding: 2.5em;
+}
+
+.add_user-txt {
+    font-size: 1.5em;
+}
+
+.add-delete_table {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
+
+.add-delete_row {
+    border: 1px solid #000000;
+}
+
+.add-delete_head {
+    border: 1px solid #000000;
+    text-align: center;
+}
+
+.add-delete_cell {
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.add-delete_btn {
+    display: flex;
+
+    justify-content: space-evenly;
+}
+
+.add-delete_btn-add {
+
+}
+
+.add-delete-btn-delete {
+
+}
+
+.forms_add-delete {
+    display: none;
+}

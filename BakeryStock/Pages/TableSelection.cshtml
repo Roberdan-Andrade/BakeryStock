@@ -20,16 +20,84 @@
 }
 
 <div class="tableSelection-main">
-    <div>
-        <h2>Gerenciar usuarios</h2>
+    <div class="container_add-user">
+        <div class="container_add-user-table">
+           <h2 class="add_user-txt">Gerenciar usuarios</h2>
+           <table class="add-delete_table">
+                <tr class="add-delete_row">
+                    <th class="add-delete_head">ID</th>
+                    <th class="add-delete_head">Nome</th>
+                    <th class="add-delete_head">Senha</th>
+                    <th class="add-delete_head">Nivel de acesso</th>
+                </tr>
+                <tr class="add-delete_row">
+                    <td class="add-delete_cell">Usuarios_Teste</td>
+                    <td class="add-delete_cell">Usuarios_Teste</td>
+                    <td class="add-delete_cell">Usuarios_Teste</td>
+                    <td class="add-delete_cell">Usuarios_Teste</td>
+                </tr>
+           </table>
+           <div class="add-delete_btn">
+                <p class="add-delete_btn-add">Criar novo usuario</p>
+                <p class="add-delete-btn-delete">Deletar usuario</p>
+           </div>
+        </div>
+        <div class="forms_add-delete">
+        <form>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="inputEmail" type="text" placeholder="Nome de usuario" />
+                <label for="inputEmail">Nome de usuario</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="inputPassword" type="password" placeholder="Senha" />
+                <label for="inputPassword">Senha</label>
+            </div>
+            <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
+                <p>Criar Usuario</p>
+            </div>
+        </form>
+        <form>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="inputID" type="text" placeholder="ID de usuario" />
+                <label for="inputID">Nome de usuario</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="inputEmail" type="text" placeholder="Nome de usuario" />
+                <label for="inputEmail">Nome de usuario</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="inputPassword" type="password" placeholder="Senha" />
+                <label for="inputPassword">Senha</label>
+            </div>
+            <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
+                <p>Deletar Usuario</p>
+            </div>
+        </form>
+        </div>
     </div>
     <div>
         <h2>Gerenciar tabelas</h2>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Ultima atualização</th>
+            </tr>
+            <tr>
+                <td>Tabela_teste</td>
+                <td>Tabela_teste</td>
+                <td>Tabela_teste</td>
+            </tr>
+        </table>
+        <div>
+            <p>Criar nova tabela</p>
+            <p>Deletar tabela</p>
+        </div>
     </div>
 </div>
 
 @section Footer {
     <div class="footer_background">
-        <p class="footer-txt">Copyright © - BakeryStock 2023 - <a class="footer-link" href="../Pages/Privacy.cshtml">Privacy</a> </p>
+        <p class="footer-txt">Copyright © - BakeryStock 2023 - <a class="footer-link" asp-page="/Privacy">Privacy</a> </p>
     </div>
 }
