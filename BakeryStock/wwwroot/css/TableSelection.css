@@ -67,6 +67,10 @@
     text-decoration: none;
 }
 
+.header-nav-link:hover {
+    color: #000000;
+}
+
 .tableSelection-main {
     background-color: #26619C;
 }
