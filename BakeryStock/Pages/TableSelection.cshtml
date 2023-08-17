@@ -21,9 +21,10 @@
 
 <div class="tableSelection-main">
     <div class="container_add-user">
-        <div class="container_add-user-table">
-           <h2 class="add_user-txt">Gerenciar usuarios</h2>
-           <table class="add-delete_table">
+        <div class="">
+            <div class="container_add-user-table">
+            <h2 class="add_user-txt">Gerenciar usuarios</h2>
+            <table class="add-delete_table">
                 <tr class="add-delete_row">
                     <th class="add-delete_head">ID</th>
                     <th class="add-delete_head">Nome</th>
@@ -36,27 +37,60 @@
                     <td class="add-delete_cell">Usuarios_Teste</td>
                     <td class="add-delete_cell">Usuarios_Teste</td>
                 </tr>
-           </table>
-           <div class="add-delete_btn">
+                <tr class="add-delete_row">
+                    <td class="add-delete_cell">Usuarios_Teste</td>
+                    <td class="add-delete_cell">Usuarios_Teste</td>
+                    <td class="add-delete_cell">Usuarios_Teste</td>
+                    <td class="add-delete_cell">Usuarios_Teste</td>
+                </tr>
+                <tr class="add-delete_row">
+                    <td class="add-delete_cell">Usuarios_Teste</td>
+                    <td class="add-delete_cell">Usuarios_Teste</td>
+                    <td class="add-delete_cell">Usuarios_Teste</td>
+                    <td class="add-delete_cell">Usuarios_Teste</td>
+                </tr>
+            </table>
+            <div class="add-delete_btn">
                 <p class="add-delete_btn-add">Criar novo usuario</p>
                 <p class="add-delete-btn-delete">Deletar usuario</p>
-           </div>
+            </div>
+            </div>
         </div>
-        <div class="forms_add-delete">
-        <form class="forms_add">
-            <div class="form-floating mb-3">
-                <input class="form-control" id="inputEmail" type="text" placeholder="Nome de usuario" />
-                <label for="inputEmail">Nome de usuario</label>
+
+        <div class="forms_add">
+            <div class="row justify-content-center row-modified">
+                <div class="col-lg-5">
+                    <div class="card shadow-lg border-0 rounded-lg">
+                        <div class="card-header"><h3 class="text-center font-weight-light">Criação de usuario</h3></div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="inputEmail" type="text" placeholder="Nome de usuario" />
+                                    <label for="inputEmail">Nome de usuario</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="inputPassword" type="password" placeholder="Senha" />
+                                    <label for="inputPassword">Senha</label>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Selecione o nivel de acesso</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
+                                    <p>Adicionar Usuario</p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="form-floating mb-3">
-                <input class="form-control" id="inputPassword" type="password" placeholder="Senha" />
-                <label for="inputPassword">Senha</label>
-            </div>
-            <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                <p>Criar Usuario</p>
-            </div>
-        </form>
-        <form forms_delete>
+        </div>
+
+        <form class="forms_delete">
             <div class="form-floating mb-3">
                 <input class="form-control" id="inputID" type="text" placeholder="ID de usuario" />
                 <label for="inputID">Nome de usuario</label>

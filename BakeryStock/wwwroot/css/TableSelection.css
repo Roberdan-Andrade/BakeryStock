@@ -91,7 +91,7 @@
     border: 2px solid #000000;
     border-radius: 2em;
 
-    background: #4582bf;
+    background: #498dd1;
 }
 
 .add_user-txt {
@@ -111,6 +111,14 @@
     border: 1px solid #000000;
 }
 
+.add-delete_row:nth-child(even) {
+    background-color: #9ac3ed;
+}
+
+.add-delete_row:nth-child(odd) {
+    background-color: #c5daf0;
+}
+
 .add-delete_head {
     border: 1px solid #000000;
 
@@ -124,8 +132,6 @@
     border: 1px solid #000000;
     text-align: center;
     padding: 0.5em;
-
-    background: #9fbad6;
 }
 
 .add-delete_btn {
@@ -143,7 +149,7 @@
     font-weight: 700;
     padding: 0.2em;
 
-    background: #9fbad6;
+    background: #9ac3ed;
 }
 
 .add-delete-btn-delete {
@@ -153,10 +159,20 @@
     font-weight: 700;
     padding: 0.2em;
 
-    background: #9fbad6;
+    background: #9ac3ed;
 
 }
 
-.forms_add-delete {
-    display: none;
+.forms_add {
+    width: 100%;
+    padding: 1em;
+}
+
+.row-modified {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
+
+.forms_delete {
+    display: none
 }
