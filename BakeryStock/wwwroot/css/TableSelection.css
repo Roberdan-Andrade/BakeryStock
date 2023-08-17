@@ -28,6 +28,8 @@
 .user-info-txt {
     color: #000000;
 
+    align-self: center;
+
     margin: 0;
     padding: 0;
 }
@@ -83,16 +85,26 @@
     display: flex;
     flex-direction: column;
 
-    padding: 2.5em;
+    padding: 0.5em;
+    margin: 2em;
+
+    border: 2px solid #000000;
+    border-radius: 2em;
+
+    background: #4582bf;
 }
 
 .add_user-txt {
     font-size: 1.5em;
+
+    align-self: center;
 }
 
 .add-delete_table {
     border: 1px solid #000000;
     border-collapse: collapse;
+
+    width: 40%;
 }
 
 .add-delete_row {
@@ -101,26 +113,47 @@
 
 .add-delete_head {
     border: 1px solid #000000;
+
+    font-weight: 700;
     text-align: center;
+
+    background: #2261a1;
 }
 
 .add-delete_cell {
     border: 1px solid #000000;
     text-align: center;
     padding: 0.5em;
+
+    background: #9fbad6;
 }
 
 .add-delete_btn {
     display: flex;
 
     justify-content: space-evenly;
+
+    padding-top: 1em;
 }
 
 .add-delete_btn-add {
+    border: 1px solid #000000;
+    border-radius: 0.5em;
 
+    font-weight: 700;
+    padding: 0.2em;
+
+    background: #9fbad6;
 }
 
 .add-delete-btn-delete {
+    border: 1px solid #000000;
+    border-radius: 0.5em;
+
+    font-weight: 700;
+    padding: 0.2em;
+
+    background: #9fbad6;
 
 }
 
