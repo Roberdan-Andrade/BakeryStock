@@ -1,0 +1,35 @@
+.table_background {
+    background: #26619C;
+    padding: 2em 0;
+}
+
+.cards-space {
+    justify-content: space-evenly;
+}
+
+.cards-width {
+    width: 25%;
+}
+
+.card-h1 {
+    font-size: 1.5em;
+
+    align-self: center;
+    text-align: center;
+}
+
+.card-table {
+
+}
+
+.card-tr {
+
+}
+
+.card-th {
+
+}
+
+.card-td {
+
+}
