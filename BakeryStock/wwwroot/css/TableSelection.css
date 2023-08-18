@@ -55,7 +55,7 @@
 }
 
 .header-nav-link {
-    font-size: 1.2em;
+    font-size: 1.25em;
     font-weight: 700;
 
     margin-bottom: 0;
@@ -77,8 +77,13 @@
     background-color: #26619C;
 }
 
-.container_add-user {
+.container_add-delete-user {
     display: flex;
+    justify-content:center;
+}
+
+.container_table {
+    width:75%
 }
 
 .container_add-user-table {
@@ -103,8 +108,6 @@
 .add-delete_table {
     border: 1px solid #000000;
     border-collapse: collapse;
-
-    width: 40%;
 }
 
 .add-delete_row {
@@ -168,11 +171,56 @@
     padding: 1em;
 }
 
+.forms_add-card{
+    width: 60%
+}
 .row-modified {
     --bs-gutter-x: 0;
     --bs-gutter-y: 0;
 }
 
+.display-grid {
+    display: grid;
+    grid-template-columns: fr fr fr fr fr fr fr fr fr fr;
+    gap: 0 0;
+}
+
+.form-card-title {
+    grid-column-start: 1;
+    grid-column-end: 9;
+}
+
+.fechar {
+    color: #ed3b3b;
+
+    grid-column-start: 10;
+}
+
+.add-user-btn-container {
+    padding: 1em 0 0.25em;
+}
+
+.add-user-btn {
+    margin: 0;
+    padding: 0.5em;
+    border: 1px solid #000000;
+    border-radius: 0.25em;
+
+    text-align: center;
+    font-size:1.2em;
+    font-weight:500;
+}
+
 .forms_delete {
-    display: none
+    width: 100%;
+    padding: 1em;
+}
+
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+    align-self: center;
 }
