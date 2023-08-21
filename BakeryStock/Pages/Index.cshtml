@@ -6,26 +6,29 @@
 
 @section Header{
     <div class="header_background">
-        <img src="" class="logo_img"/>
-        <h1 class="logo_txt">BakeryStock</h1>
+        <div class="container-logo">
+            <img src="~/img/img_nome.png" class="logo-img" />
+        </div>
 
-        <nav>
-            <ul>
-                <li></li>
-                <li></li>
+        <nav class="nave">
+            <ul class="nave-list">
+                <li class="nave-item"><a class="nave-link" asp-page="/login">Entrar</a></li>
+                <li class="nave-item"><a class="nave-link" asp-page="/CreateAccount">Cadastre-se</a></li>
             </ul>
         </nav>
     </div>
 }
 
-<div>
-    <div class="main_background">
-        <p>aaaaaaa Main</p>
+<div class ="main_background">
+    <div class="introducao">
+        <h2 class="introducao-titulo">BakeryStock - O que somos</h2>
+        <p class="introducao-txt">O sistema de gestão de estoque "Bakery Stock" foi desenvolvido especificamente para atender às necessidades das padarias modernas. Com uma interface amigável e intuitiva, o software simplifica a monitorização e o controlo do estoque, permitindo rastrear entradas, saídas e estabelecer alertas de reabastecimento.O Bakery Stock potencializa a eficiência operacional das padarias, contribuindo para a satisfação do cliente e o sucesso sustentável no mercado competitivo.</p>
     </div>
+    <img src="~/img/Logo_V5.png" class="introducao-img" />
 </div>
 
 @section Footer{
     <div class="footer_background">
-
+        <p class="footer-txt">Copyright © - BakeryStock 2023 - <a class="footer-link" asp-page="/Privacy">Privacy</a> </p>
     </div>
 }

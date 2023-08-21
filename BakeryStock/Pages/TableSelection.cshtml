@@ -1,0 +1,216 @@
+﻿@page
+@model BakeryStock.Pages.TableSelectionModel
+@{
+    ViewData["Title"] = "Seleção de tabela";
+}
+
+@section Header {
+    <div class="tableSelection-header">
+        <div class="header-user-info">
+            <p class="user-info-txt">Nome do Usuario: <span class="user-info-span"></span></p>
+            <p class="user-info-txt">Nivel de acesso: <span class="user-info-span"></span></p>
+        </div>
+        <div class="header-nav">
+            <ul class="header-nav-list">
+                <li class="header-nav-item"><a class="header-nav-link" asp-page="/login">Fazer Login em outra conta</a></li>
+                <li class="header-nav-item"><a class="header-nav-link" asp-page="/Index">Voltar para Home</a></li>
+            </ul>
+        </div>
+    </div>
+}
+
+<div class="tableSelection-main">
+    <div class="container_add-delete-user">
+        <div class="container_table">
+            <div class="container_add-user-table">
+            <h2 class="add_user-txt">Gerenciar usuarios</h2>
+            <table class="add-delete_table">
+                <tr class="add-delete_row">
+                    <th class="add-delete_head">ID</th>
+                    <th class="add-delete_head">Nome</th>
+                    <th class="add-delete_head">Senha</th>
+                    <th class="add-delete_head">Nivel de acesso</th>
+                </tr>
+                <tr class="add-delete_row">
+                    <td class="add-delete_cell">Usuarios_Teste</td>
+                    <td class="add-delete_cell">Usuarios_Teste</td>
+                    <td class="add-delete_cell">Usuarios_Teste</td>
+                    <td class="add-delete_cell">Usuarios_Teste</td>
+                </tr>
+                <tr class="add-delete_row">
+                    <td class="add-delete_cell">Usuarios_Teste</td>
+                    <td class="add-delete_cell">Usuarios_Teste</td>
+                    <td class="add-delete_cell">Usuarios_Teste</td>
+                    <td class="add-delete_cell">Usuarios_Teste</td>
+                </tr>
+                <tr class="add-delete_row">
+                    <td class="add-delete_cell">Usuarios_Teste</td>
+                    <td class="add-delete_cell">Usuarios_Teste</td>
+                    <td class="add-delete_cell">Usuarios_Teste</td>
+                    <td class="add-delete_cell">Usuarios_Teste</td>
+                </tr>
+            </table>
+            <div class="add-delete_btn">
+                <p class="add-delete_btn-add botao-add-user">Criar novo usuario</p>
+                <p class="add-delete-btn-delete botao-delete-user">Deletar usuario</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="forms_add display-none formulario-add-user">
+            <div class="row justify-content-center row-modified">
+                <div class="forms_add-card">
+                    <div class="card shadow-lg border-0 rounded-lg">
+                        <div class="card-header display-grid">
+                            <h3 class="text-center font-weight-light form-card-title">Criação de usuario</h3>
+                            <h3 class="fechar fechar-add-user">X</h3>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="inputEmail" type="text" placeholder="Nome do usuario" />
+                                    <label for="inputEmail">Nome do usuario</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="inputPassword" type="password" placeholder="Senha do usuario" />
+                                    <label for="inputPassword">Senha do usuario</label>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label for="exampleFormControlSelect1">Selecione o nivel de acesso</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>Nivel 1 - Adiministrador</option>
+                                        <option>Nivel 2 - Editar tabelas</option>
+                                        <option>Nivel 3 - Apenas Visualizar</option>
+                                    </select>
+                                </div>
+                                <div class="add-user-btn-container">
+                                    <p class="add-user-btn">Adicionar Usuario</p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="forms_delete display-none formulario-delete-user">
+            <div class="row justify-content-center row-modified">
+                <div class="forms_add-card">
+                    <div class="card shadow-lg border-0 rounded-lg">
+                        <div class="card-header display-grid">
+                            <h3 class="text-center font-weight-light form-card-title">Deletar Usuario</h3>
+                            <h3 class="fechar fechar-delete-user">X</h3>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="inputEmail" type="text" placeholder="ID do usuario" />
+                                    <label for="inputEmail">ID do usuario</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="inputEmail" type="text" placeholder="Nome do usuario" />
+                                    <label for="inputEmail">Nome do usuario</label>
+                                </div>
+                                <div class="add-user-btn-container">
+                                    <p class="add-user-btn">Deletar Usuario</p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container_add-delete-user">
+        <div class="container_table">
+            <div class="container_add-user-table">
+                <h2 class="add_user-txt">Gerenciar Tabelas</h2>
+                <table class="add-delete_table">
+                    <tr class="add-delete_row">
+                        <th class="add-delete_head">ID</th>
+                        <th class="add-delete_head">Nome</th>
+                        <th class="add-delete_head">Ultima Atualização</th>
+                    </tr>
+                    <tr class="add-delete_row">
+                        <td class="add-delete_cell">Tabelas_Teste</td>
+                        <td class="add-delete_cell"><a class="add-delete_cell-link" asp-page="/Table">Tabelas_Teste</a></td>
+                        <td class="add-delete_cell"><a class="add-delete_cell-link" asp-page="/TableRegister">Tabelas_Teste</a></td>
+                    </tr>
+                    <tr class="add-delete_row">
+                        <td class="add-delete_cell">Tabelas_Teste</td>
+                        <td class="add-delete_cell"><a class="add-delete_cell-link" asp-page="/Table">Tabelas_Teste</a></td>
+                        <td class="add-delete_cell"><a class="add-delete_cell-link" asp-page="/TableRegister">Tabelas_Teste</a></td>
+                    </tr>
+                    <tr class="add-delete_row">
+                        <td class="add-delete_cell">Tabelas_Teste</td>
+                        <td class="add-delete_cell"><a class="add-delete_cell-link" asp-page="/Table">Tabelas_Teste</a></td>
+                        <td class="add-delete_cell"><a class="add-delete_cell-link" asp-page="/TableRegister">Tabelas_Teste</a></td>
+                    </tr>
+                </table>
+                <div class="add-delete_btn">
+                    <p class="add-delete_btn-add botao-add-table">Criar Nova Tabela</p>
+                    <p class="add-delete-btn-delete botao-delete-table">Deletar Tabela</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="forms_add display-none formulario-add-table">
+            <div class="row justify-content-center row-modified">
+                <div class="forms_add-card">
+                    <div class="card shadow-lg border-0 rounded-lg">
+                        <div class="card-header display-grid">
+                            <h3 class="text-center font-weight-light form-card-title">Criação de Tabela</h3>
+                            <h3 class="fechar fechar-add-table">X</h3>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="inputEmail" type="text" placeholder="Nome da tabela" />
+                                    <label for="inputEmail">Nome da tabela</label>
+                                </div>
+                                <div class="add-user-btn-container">
+                                    <p class="add-user-btn">Criar Tabela</p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="forms_delete display-none formulario-delete-table">
+            <div class="row justify-content-center row-modified">
+                <div class="forms_add-card">
+                    <div class="card shadow-lg border-0 rounded-lg">
+                        <div class="card-header display-grid">
+                            <h3 class="text-center font-weight-light form-card-title">Deletar Tabela</h3>
+                            <h3 class="fechar fechar-delete-table">X</h3>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="inputEmail" type="text" placeholder="ID da tabela" />
+                                    <label for="inputEmail">ID da tabela</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="inputEmail" type="text" placeholder="Nome da tabela" />
+                                    <label for="inputEmail">Nome da tabela</label>
+                                </div>
+                                <div class="add-user-btn-container">
+                                    <p class="add-user-btn">Deletar Tabela</p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Footer {
+    <div class="footer_background">
+        <p class="footer-txt">Copyright © - BakeryStock 2023 - <a class="footer-link" asp-page="/Privacy">Privacy</a> </p>
+    </div>
+}

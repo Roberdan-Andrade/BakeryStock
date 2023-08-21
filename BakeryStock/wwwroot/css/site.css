@@ -1,18 +1,134 @@
-.header_background {
-    height: 10vh;
-    width: 100vw;
+html {
+    font-family: 'Poppins', sans-serif;
+}
 
-    background-color: #F6BBA7;
+.header_background {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0.75em 2em;
+
+    background-color: #FFE2A5;
+}
+
+.container-logo {
+    display: flex;
+}
+
+.txt-color-black {
+    color: #000000;
+}
+
+.txt-color-black:hover {
+    color: #000000;
+
+}
+
+.logo-img {
+    height: 75px;
+    width: 200px;
+    margin: 0 1em;
+    border-radius: 10em;
+}
+
+.nave {
+
+}
+
+.nave-list {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 0;
+}
+
+.nave-item {
+
+}
+
+.nave-link {
+    font-size: 1.75em;
+    font-weight: 700;
+
+    margin: 0 0.5em;
+    padding: 0.2em 1em;
+
+    color: #000000;
+    background-color: #FFCE6B;
+    border: 1px solid #ffffff;
+    border-radius: 0.2em;
+
+    text-decoration:none;
+}
+
+.nave-link:hover {
+    color: #000000;
 }
 
 .main_background {
-    width: 100vw;
+    display: flex;
+    background-color: #26619C;
+}
 
-    background-color: #001F3D;
+.introducao {
+    padding: 5em 2em 3.5em 2em;
+}
+
+.introducao-titulo {
+    font-size: 3.5em;
+    color: #ffffff;
+
+    padding: 0.5em 0 0 0;
+}
+
+.introducao-txt {
+    font-size: 1.25em;
+    color: #ffffff;
+
+    width: 40vw;
+
+    padding: 1em 0 0 2.5em ;
+}
+
+.introducao-img {
+    height: 200px;
+
+    align-self:center;
+
+    margin: 0 0 0 2.5em;
 }
 
 .footer_background {
-    height: 10vh;
-    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    background-color: #272727;
+
+    padding: 1em;
+}
+
+.footer-txt {
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+.footer-link {
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+
+.main_background--login {
     background-color: #26619C;
+
+    padding: 2em 0 3em 0;
+}
+
+.main_background--password {
+    background-color: #26619C;
+
+    padding: 2em 0 3em 0;
 }
