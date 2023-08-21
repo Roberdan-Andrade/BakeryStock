@@ -19,17 +19,50 @@
 }
 
 .card-table {
-
+    border: 1px solid #000000;
+    border-collapse: collapse;
 }
 
 .card-tr {
+    border: 1px solid #000000;
+}
+
+.card-tr:nth-child(even) {
+
+}
+
+.card-tr:nth-child(odd) {
 
 }
 
 .card-th {
-
+    border: 1px solid #000000;
+    font-weight: 700;
+    text-align: center;
 }
 
 .card-td {
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 0.5em;
+}
 
+.layoutAuthentication-modified {
+    height: auto;
+    width: auto;
+}
+
+.container-modified {
+    width: 70%;
+}
+
+.form-display-name {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 1em;
+}
+
+.form-add-name {
+    width: 80%;
 }
