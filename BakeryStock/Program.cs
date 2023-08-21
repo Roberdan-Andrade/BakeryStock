@@ -1,7 +1,13 @@
+using BakeryStock.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<BakeryStockContext>(
+    options => options.UseNpgsql(builder.Configuration.GetConnectionString("BakeryStockContext"))
+    );
 
 var app = builder.Build();
 

@@ -11,7 +11,7 @@ namespace BakeryStock.Models
         [Required(ErrorMessage = "Campo \" {0} \" é obrigatorio")]
         public string? Nome { get; set; }
 
-        public string? Validade { get; set; }
+        public DateTime? Validade { get; set; }
 
         public string? Fornecedor { get; set; }
 
