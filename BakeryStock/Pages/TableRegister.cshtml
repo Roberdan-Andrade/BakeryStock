@@ -1,0 +1,90 @@
+﻿@page
+@model BakeryStock.Pages.TableRegisterModel
+@{
+    ViewData["Title"] = "Tabela";
+    Layout = "_LayoutTable";
+}
+
+@section Header {
+    <div class="tableSelection-header">
+        <div class="header-user-info">
+            <p class="user-info-txt">Nome do Usuario: <span class="user-info-span"></span></p>
+            <p class="user-info-txt">Nivel de acesso: <span class="user-info-span"></span></p>
+        </div>
+        <div class="header-nav">
+            <ul class="header-nav-list">
+                <li class="header-nav-item"><a class="header-nav-link" asp-page="/login">Fazer Login em outra conta</a></li>
+                <li class="header-nav-item"><a class="header-nav-link" asp-page="/tableSelection">Voltar para Seleção</a></li>
+            </ul>
+        </div>
+    </div>
+}
+
+<body class="sb-nav-fixed">
+    <div id="layoutSidenav_content">
+        <main class="table_background">
+            <div class="container-fluid px-4">
+
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <i class="fas fa-table me-1"></i>
+                        TableName
+                    </div>
+                    <div class="card-body">
+                        <table id="datatablesSimple">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Usuario_ID</th>
+                                    <th>Tabela_ID</th>
+                                    <th>Produto_ID</th>
+                                    <th>Quantidade</th>
+                                    <th>Tipo</th>
+                                    <th>Descrição</th>
+                                    <th>Data</th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Usuario_ID</th>
+                                    <th>Tabela_ID</th>
+                                    <th>Produto_ID</th>
+                                    <th>Quantidade</th>
+                                    <th>Tipo</th>
+                                    <th>Descrição</th>
+                                    <th>Data</th>
+                                </tr>
+                            </tfoot>
+                            <tbody>
+                                <tr>
+                                    <td>Tiger Nixon</td>
+                                    <td>System Architect</td>
+                                    <td>Edinburgh</td>
+                                    <td>61</td>
+                                    <td>2011/04/25</td>
+                                    <td>$320,800</td>
+                                    <td>$320,800</td>
+                                    <td>$320,800</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="assets/demo/chart-area-demo.js"></script>
+    <script src="assets/demo/chart-bar-demo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+    <script src="js/datatables-simple-demo.js"></script>
+</body>
+
+@section Footer {
+    <div class="footer_background">
+        <p class="footer-txt">Copyright © - BakeryStock 2023 - <a class="footer-link" asp-page="/Privacy">Privacy</a> </p>
+    </div>
+}

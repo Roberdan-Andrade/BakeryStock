@@ -3,6 +3,16 @@
     padding: 2em 0;
 }
 
+.background-acabando {
+    background: #FFCE6B;
+    color: #000000;
+}
+
+.background-estragado {
+    background: #FFCE6B;
+    color: #000000;
+}
+
 .cards-space {
     justify-content: space-evenly;
 }
@@ -16,6 +26,9 @@
 
     align-self: center;
     text-align: center;
+
+    color: #000000;
+
 }
 
 .card-table {
@@ -25,20 +38,25 @@
 
 .card-tr {
     border: 1px solid #000000;
+    border-radius: 0.5em;
 }
 
 .card-tr:nth-child(even) {
-
+    background-color: #FFE2A5;
+    color: #000000;
 }
 
 .card-tr:nth-child(odd) {
-
+    background-color: #FFE2A5;
+    color: #000000;
 }
 
 .card-th {
     border: 1px solid #000000;
     font-weight: 700;
     text-align: center;
+
+    background: #FFCE6B;
 }
 
 .card-td {
@@ -52,10 +70,6 @@
     width: auto;
 }
 
-.container-modified {
-    width: 70%;
-}
-
 .form-display-name {
     display: flex;
     justify-content: center;
@@ -63,6 +77,32 @@
     margin-bottom: 1em;
 }
 
-.form-add-name {
-    width: 80%;
+.form-delete-id {
+    width: 100%;
+}
+
+.container-padding {
+    display: flex;
+    justify-content: space-evenly;
+
+    padding-bottom: 1em;
+}
+
+.conteiner-forms-width {
+    width: 40%;
+}
+
+.container-form-margin {
+    margin: 0;
+    padding: 0;
+}
+
+.btn-modified {
+    justify-self: center;
+    align-self: center;
+}
+
+.forms-delete-flex {
+    display: flex;
+    justify-content: space-evenly;
 }
