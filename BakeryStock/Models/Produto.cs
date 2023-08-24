@@ -11,13 +11,13 @@ namespace BakeryStock.Models
         [Required(ErrorMessage = "Campo \" {0} \" é obrigatorio")]
         public string? Nome { get; set; }
 
+        public int? Quantidade { get; set; }
+
         public DateTime? Validade { get; set; }
 
         public string? Fornecedor { get; set; }
 
         [Display(Name = "Valor de compra")]
         public float? Preço { get; set; }
-
-        public List<Tabela> Tabelas { get; set; } = new ();
     }
 }
