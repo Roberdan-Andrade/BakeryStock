@@ -13,6 +13,8 @@ namespace BakeryStock.Models
 
         public int? Quantidade { get; set; }
 
+        public int? QuantidadeAviso { get; set; }
+
         public DateTime? Validade { get; set; }
 
         public string? Fornecedor { get; set; }
