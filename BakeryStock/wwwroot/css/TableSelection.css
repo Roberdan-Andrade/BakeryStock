@@ -28,14 +28,17 @@
 .user-info-txt {
     color: #000000;
 
-    align-self: center;
+    align-self: flex-start;
 
     margin: 0;
     padding: 0;
+
+        font-weight: 700;
 }
 
 .user-info-span {
-
+    text-align: center;
+    font-weight: 400;
 }
 
 .header-nav {

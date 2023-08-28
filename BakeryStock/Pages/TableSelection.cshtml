@@ -7,8 +7,8 @@
 @section Header {
     <div class="tableSelection-header">
         <div class="header-user-info">
-            <p class="user-info-txt">Nome do Usuario: <span class="user-info-span"></span></p>
-            <p class="user-info-txt">Nivel de acesso: <span class="user-info-span"></span></p>
+            <p class="user-info-txt">Nome do Usuario: <span class="user-info-span">Carlos</span></p>
+            <p class="user-info-txt">Nivel de acesso: <span class="user-info-span">1 - Administrador</span></p>
         </div>
         <div class="header-nav">
             <ul class="header-nav-list">
@@ -31,24 +31,36 @@
                     <th class="add-delete_head">Senha</th>
                     <th class="add-delete_head">Nivel de acesso</th>
                 </tr>
-                <tr class="add-delete_row">
-                    <td class="add-delete_cell">Usuarios_Teste</td>
-                    <td class="add-delete_cell">Usuarios_Teste</td>
-                    <td class="add-delete_cell">Usuarios_Teste</td>
-                    <td class="add-delete_cell">Usuarios_Teste</td>
-                </tr>
-                <tr class="add-delete_row">
-                    <td class="add-delete_cell">Usuarios_Teste</td>
-                    <td class="add-delete_cell">Usuarios_Teste</td>
-                    <td class="add-delete_cell">Usuarios_Teste</td>
-                    <td class="add-delete_cell">Usuarios_Teste</td>
-                </tr>
-                <tr class="add-delete_row">
-                    <td class="add-delete_cell">Usuarios_Teste</td>
-                    <td class="add-delete_cell">Usuarios_Teste</td>
-                    <td class="add-delete_cell">Usuarios_Teste</td>
-                    <td class="add-delete_cell">Usuarios_Teste</td>
-                </tr>
+                    <tr class="add-delete_row">
+                        <td class="add-delete_cell">1</td>
+                        <td class="add-delete_cell">Carlos</td>
+                        <td class="add-delete_cell">senha123</td>
+                        <td class="add-delete_cell">1 - Administrador</td>
+                    </tr>
+                    <tr class="add-delete_row">
+                        <td class="add-delete_cell">2</td>
+                        <td class="add-delete_cell">Maria</td>
+                        <td class="add-delete_cell">segredo456</td>
+                        <td class="add-delete_cell">2 - Editor</td>
+                    </tr>
+                    <tr class="add-delete_row">
+                        <td class="add-delete_cell">3</td>
+                        <td class="add-delete_cell">Pedro</td>
+                        <td class="add-delete_cell">minhasenha</td>
+                        <td class="add-delete_cell">3 - Espectador</td>
+                    </tr>
+                    <tr class="add-delete_row">
+                        <td class="add-delete_cell">4</td>
+                        <td class="add-delete_cell">Ana</td>
+                        <td class="add-delete_cell">12345678</td>
+                        <td class="add-delete_cell">2 - Editor</td>
+                    </tr>
+                    <tr class="add-delete_row">
+                        <td class="add-delete_cell">5</td>
+                        <td class="add-delete_cell">Luisa</td>
+                        <td class="add-delete_cell">senhaluisa</td>
+                        <td class="add-delete_cell">3 - Espectador</td>
+                    </tr>
             </table>
             <div class="add-delete_btn">
                 <p class="add-delete_btn-add botao-add-user">Criar novo usuario</p>
@@ -133,19 +145,19 @@
                         <th class="add-delete_head">Ultima Atualização</th>
                     </tr>
                     <tr class="add-delete_row">
-                        <td class="add-delete_cell">Tabelas_Teste</td>
-                        <td class="add-delete_cell"><a class="add-delete_cell-link" asp-page="/Table">Tabelas_Teste</a></td>
-                        <td class="add-delete_cell"><a class="add-delete_cell-link" asp-page="/TableRegister">Tabelas_Teste</a></td>
+                        <td class="add-delete_cell">1</td>
+                        <td class="add-delete_cell"><a asp-page="/Table" class="add-delete_cell-link">Ingredientes</a></td>
+                        <td class="add-delete_cell"><a asp-page="/TableRegister" class="add-delete_cell-link">2023-08-15 10:30:00</a></td>
                     </tr>
                     <tr class="add-delete_row">
-                        <td class="add-delete_cell">Tabelas_Teste</td>
-                        <td class="add-delete_cell"><a class="add-delete_cell-link" asp-page="/Table">Tabelas_Teste</a></td>
-                        <td class="add-delete_cell"><a class="add-delete_cell-link" asp-page="/TableRegister">Tabelas_Teste</a></td>
+                        <td class="add-delete_cell">2</td>
+                        <td class="add-delete_cell"><a asp-page="/Table" class="add-delete_cell-link">Ingredientes em Uso</a></td>
+                        <td class="add-delete_cell"><a asp-page="/TableRegister" class="add-delete_cell-link">2023-08-14 14:15:00</a></td>
                     </tr>
                     <tr class="add-delete_row">
-                        <td class="add-delete_cell">Tabelas_Teste</td>
-                        <td class="add-delete_cell"><a class="add-delete_cell-link" asp-page="/Table">Tabelas_Teste</a></td>
-                        <td class="add-delete_cell"><a class="add-delete_cell-link" asp-page="/TableRegister">Tabelas_Teste</a></td>
+                        <td class="add-delete_cell">3</td>
+                        <td class="add-delete_cell"><a asp-page="/Table" class="add-delete_cell-link">Produtos</a></td>
+                        <td class="add-delete_cell"><a asp-page="/TableRegister" class="add-delete_cell-link">2023-08-13 18:00:00</a></td>
                     </tr>
                 </table>
                 <div class="add-delete_btn">
