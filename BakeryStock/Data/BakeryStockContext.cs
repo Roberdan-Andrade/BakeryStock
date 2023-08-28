@@ -13,10 +13,7 @@ namespace BakeryStock.Data
 
         public DbSet<Produto>? Produtos { get; set; }
 
-        public DbSet<ProdutoTabela>? ProdutoTabelas { get; set;}
-
         public DbSet<Registro>? Registros { get; set; }
 
-        public DbSet<Tabela>? Tabelas { get; set;}
     }
 }

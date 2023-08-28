@@ -10,8 +10,6 @@ namespace BakeryStock.Models
 
         //Usuario_ID
 
-        public Tabela? Tabela_ID { get; set; }
-
         public Produto? Produto_ID { get; set; }
 
         public int Quantidade { get; set; }
@@ -26,5 +24,5 @@ namespace BakeryStock.Models
         public DateTime? Data { get; set; }
     }
 
-    public enum TipoModificacao {Saida, Entrada}
+    public enum TipoModificacao {Saida, Entrada, Outro}
 }

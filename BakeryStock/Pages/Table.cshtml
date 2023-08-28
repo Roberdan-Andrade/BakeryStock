@@ -8,8 +8,8 @@
 @section Header {
     <div class="tableSelection-header">
         <div class="header-user-info">
-            <p class="user-info-txt">Nome do Usuario: <span class="user-info-span"></span></p>
-            <p class="user-info-txt">Nivel de acesso: <span class="user-info-span"></span></p>
+            <p class="user-info-txt">Nome do Usuario: <span class="user-info-span">Carlos</span></p>
+            <p class="user-info-txt">Nivel de acesso: <span class="user-info-span">1 - Administrador</span></p>
         </div>
         <div class="header-nav">
             <ul class="header-nav-list">
@@ -32,14 +32,17 @@
                                     <tr class="card-tr">
                                         <th class="card-th">ID</th>
                                         <th class="card-th">Nome</th>
+                                        <th class="card-th">Quantidade</th>
                                     </tr>
                                     <tr class="card-tr">
-                                        <td class="card-td">Teste</td>
-                                        <td class="card-td">Teste</td>
+                                        <td class="card-td">9</td>
+                                        <td class="card-td">Frutas Cristalizadas</td>
+                                        <td class="card-td">5 kg</td>
                                     </tr>
                                     <tr class="card-tr">
-                                        <td class="card-td">Teste</td>
-                                        <td class="card-td">Teste</td>
+                                        <td class="card-td">15</td>
+                                        <td class="card-td">Essência de Baunilha</td>
+                                        <td class="card-td">50 ml</td>
                                     </tr>
                                 </table>
                             </div>
@@ -51,14 +54,12 @@
                                     <tr class="card-tr">
                                         <th class="card-th">ID</th>
                                         <th class="card-th">Nome</th>
+                                        <th class="card-th">Validade</th>
                                     </tr>
                                     <tr class="card-tr">
-                                        <td class="card-td">Teste</td>
-                                        <td class="card-td">Teste</td>
-                                    </tr>
-                                    <tr class="card-tr">
-                                        <td class="card-td">Teste</td>
-                                        <td class="card-td">Teste</td>
+                                        <td class="card-td">4</td>
+                                        <td class="card-td">Leite</td>
+                                        <td class="card-td">10/09/2023</td>
                                     </tr>
                                 </table>
                             </div>
@@ -119,19 +120,26 @@
                                                             </div>
                                                         </div>
                                                         <div class="mt-4 mb-0">
-                                                            <div class="d-grid"><a class="btn btn-primary btn-block" asp-page="/TableSelection">Adicionar Produto</a></div>
+                                                            <div class="d-grid"><a class="btn btn-primary btn-block" asp-page="/Table">Adicionar Item</a></div>
                                                         </div>
                                                     </form>
                                                 </div>
                                             </div>
                                         </div>
+
                                         <div class="col-lg-7 conteiner-forms-width">
                                             <div class="card shadow-lg border-0 rounded-lg container-form-margin">
-                                                <div class="card-header"><h3 class="text-center font-weight-light my-4">Modificar item por ID</h3></div>
+                                                <div class="card-header"><h3 class="text-center font-weight-light my-4">Modificar ou Deletar item por ID</h3></div>
                                                 <div class="card-body">
                                                     <form>
-                                                        <div class="mb-3">
-                                                            <div>
+                                                        <div class="row mb-3">
+                                                            <div class="col-md-6">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                    <input class="form-control form-add-name" id="inputFirstName" type="text" placeholder="Nome" />
+                                                                    <label for="inputFirstName">Nome</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
                                                                 <div class="form-floating mb-3 mb-md-0">
                                                                     <input class="form-control form-add-name" id="inputFirstName" type="number" placeholder="ID" />
                                                                     <label for="inputFirstName">ID</label>
@@ -140,10 +148,12 @@
                                                         </div>
                                                         <div class="row mb-3">
                                                             <div class="col-md-6">
-                                                                <div class="form-floating mb-3 mb-md-0">
-                                                                    <input class="form-control form-add-name" id="inputFirstName" type="text" placeholder="Nome" />
-                                                                    <label for="inputFirstName">Nome</label>
-                                                                </div>
+                                                                <label for="exampleFormControlSelect1">Tipo de mudança</label>
+                                                                <select class="form-control" id="exampleFormControlSelect1">
+                                                                    <option>Entrada de itens</option>
+                                                                    <option>Saida de itens</option>
+                                                                    <option>Outros</option>
+                                                                </select>
                                                             </div>
                                                             <div class="col-md-6">
                                                                 <div class="form-floating">
@@ -180,10 +190,18 @@
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div class="row mb-3">
+                                                            <div class="">
+                                                                <div class="form-floating mb-3 mb-md-0">
+                                                                    <input class="form-control" id="inputPassword" type="text" placeholder="Descrição da mudança" />
+                                                                    <label for="inputPassword">Descrição da mudança</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                         <div>
                                                             <div class="forms-delete-flex">
-                                                                <a class="btn btn-primary btn-modified" asp-page="/TableSelection">Modificar Produto</a>
-                                                                <a class="btn btn-danger btn-modified" asp-page="/TableSelection">Deletar Produto</a>
+                                                                <a class="btn btn-primary btn-modified" asp-page="/Table">Modificar Item</a>
+                                                                <a class="btn btn-danger btn-modified" asp-page="/Table">Deletar Item</a>
                                                             </div>
                                                         </div>
                                                     </form>
@@ -204,7 +222,7 @@
                     <div class="card mb-4">
                         <div class="card-header">
                             <i class="fas fa-table me-1"></i>
-                            TableName
+                            Produtos
                         </div>
                         <div class="card-body">
                             <table id="datatablesSimple">
@@ -218,130 +236,168 @@
                                         <th>Preço de compra</th>
                                     </tr>
                                 </thead>
-                                <tfoot>
-                                    <tr>
-                                        <th>ID</th>
-                                        <th>Nome</th>
-                                        <th>Quantidade</th>
-                                        <th>Validade</th>
-                                        <th>Fornecedor</th>
-                                        <th>Preço de compra</th>
-                                    </tr>
-                                </tfoot>
-                                <tbody>
-                                    <tr>
-                                        <td>Tiger Nixon</td>
-                                        <td>System Architect</td>
-                                        <td>Edinburgh</td>
-                                        <td>61</td>
-                                        <td>2011/04/25</td>
-                                        <td>$320,800</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Garrett Winters</td>
-                                        <td>Accountant</td>
-                                        <td>Tokyo</td>
-                                        <td>63</td>
-                                        <td>2011/07/25</td>
-                                        <td>$170,750</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Airi Satou</td>
-                                        <td>Accountant</td>
-                                        <td>Tokyo</td>
-                                        <td>33</td>
-                                        <td>2008/11/28</td>
-                                        <td>$162,700</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Brielle Williamson</td>
-                                        <td>Integration Specialist</td>
-                                        <td>New York</td>
-                                        <td>61</td>
-                                        <td>2012/12/02</td>
-                                        <td>$372,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Herrod Chandler</td>
-                                        <td>Sales Assistant</td>
-                                        <td>San Francisco</td>
-                                        <td>59</td>
-                                        <td>2012/08/06</td>
-                                        <td>$137,500</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Rhona Davidson</td>
-                                        <td>Integration Specialist</td>
-                                        <td>Tokyo</td>
-                                        <td>55</td>
-                                        <td>2010/10/14</td>
-                                        <td>$327,900</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Colleen Hurst</td>
-                                        <td>Javascript Developer</td>
-                                        <td>San Francisco</td>
-                                        <td>39</td>
-                                        <td>2009/09/15</td>
-                                        <td>$205,500</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Sonya Frost</td>
-                                        <td>Software Engineer</td>
-                                        <td>Edinburgh</td>
-                                        <td>23</td>
-                                        <td>2008/12/13</td>
-                                        <td>$103,600</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Jena Gaines</td>
-                                        <td>Office Manager</td>
-                                        <td>London</td>
-                                        <td>30</td>
-                                        <td>2008/12/19</td>
-                                        <td>$90,560</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Quinn Flynn</td>
-                                        <td>Support Lead</td>
-                                        <td>Edinburgh</td>
-                                        <td>22</td>
-                                        <td>2013/03/03</td>
-                                        <td>$342,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Charde Marshall</td>
-                                        <td>Regional Director</td>
-                                        <td>San Francisco</td>
-                                        <td>36</td>
-                                        <td>2008/10/16</td>
-                                        <td>$470,600</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Haley Kennedy</td>
-                                        <td>Senior Marketing Designer</td>
-                                        <td>London</td>
-                                        <td>43</td>
-                                        <td>2012/12/18</td>
-                                        <td>$313,500</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tatyana Fitzpatrick</td>
-                                        <td>Regional Director</td>
-                                        <td>London</td>
-                                        <td>19</td>
-                                        <td>2010/03/17</td>
-                                        <td>$385,750</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Michael Silva</td>
-                                        <td>Marketing Designer</td>
-                                        <td>London</td>
-                                        <td>66</td>
-                                        <td>2012/11/27</td>
-                                        <td>$198,500</td>
-                                    </tr>
-                                </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Farinha de Trigo</td>
+                                    <td>50 kg</td>
+                                    <td>20/09/2023</td>
+                                    <td>Fornecedor A</td>
+                                    <td>R$ 4,50/kg</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Ovos</td>
+                                    <td>300 unidades</td>
+                                    <td>15/09/2023</td>
+                                    <td>Fornecedor B</td>
+                                    <td>R$ 0,30/unidade</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Açúcar</td>
+                                    <td>25 kg</td>
+                                    <td>25/10/2023</td>
+                                    <td>Fornecedor C</td>
+                                    <td>R$ 3,00/kg</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Leite</td>
+                                    <td>20 litros</td>
+                                    <td>10/09/2023</td>
+                                    <td>Fornecedor A</td>
+                                    <td>R$ 2,50/litro</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Fermento</td>
+                                    <td>15 pacotes</td>
+                                    <td>18/09/2023</td>
+                                    <td>Fornecedor D</td>
+                                    <td>R$ 1,20/pacote</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Manteiga</td>
+                                    <td>10 kg</td>
+                                    <td>22/09/2023</td>
+                                    <td>Fornecedor B</td>
+                                    <td>R$ 7,50/kg</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Creme de Leite</td>
+                                    <td>30 latas</td>
+                                    <td>30/09/2023</td>
+                                    <td>Fornecedor C</td>
+                                    <td>R$ 2,80/lat</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Chocolate</td>
+                                    <td>40 barras</td>
+                                    <td>12/10/2023</td>
+                                    <td>Fornecedor E</td>
+                                    <td>R$ 6,00/barra</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Frutas Cristalizadas</td>
+                                    <td>5 kg</td>
+                                    <td>28/09/2023</td>
+                                    <td>Fornecedor F</td>
+                                    <td>R$ 8,00/kg</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>Fermento Biológico</td>
+                                    <td>25 pacotes</td>
+                                    <td>17/09/2023</td>
+                                    <td>Fornecedor D</td>
+                                    <td>R$ 1,50/pacote</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>Sal</td>
+                                    <td>10 kg</td>
+                                    <td>30/09/2023</td>
+                                    <td>Fornecedor G</td>
+                                    <td>R$ 1,00/kg</td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>Chocolate em Pó</td>
+                                    <td>15 kg</td>
+                                    <td>10/10/2023</td>
+                                    <td>Fornecedor E</td>
+                                    <td>R$ 5,50/kg</td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td>Margarina</td>
+                                    <td>10 kg</td>
+                                    <td>25/09/2023</td>
+                                    <td>Fornecedor B</td>
+                                    <td>R$ 3,20/kg</td>
+                                </tr>
+                                <tr>
+                                    <td>14</td>
+                                    <td>Cacau em Pó</td>
+                                    <td>8 kg</td>
+                                    <td>15/10/2023</td>
+                                    <td>Fornecedor E</td>
+                                    <td>R$ 7,80/kg</td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td>Essência de Baunilha</td>
+                                    <td>50 ml</td>
+                                    <td>22/09/2023</td>
+                                    <td>Fornecedor F</td>
+                                    <td>R$ 2,00/ml</td>
+                                </tr>
+                                <tr>
+                                    <td>16</td>
+                                    <td>Creme de Confeiteiro</td>
+                                    <td>20 kg</td>
+                                    <td>28/09/2023</td>
+                                    <td>Fornecedor C</td>
+                                    <td>R$ 4,00/kg</td>
+                                </tr>
+                                <tr>
+                                    <td>17</td>
+                                    <td>Amido de Milho</td>
+                                    <td>12 kg</td>
+                                    <td>20/09/2023</td>
+                                    <td>Fornecedor A</td>
+                                    <td>R$ 2,20/kg</td>
+                                </tr>
+                                <tr>
+                                    <td>18</td>
+                                    <td>Fubá</td>
+                                    <td>18 kg</td>
+                                    <td>25/09/2023</td>
+                                    <td>Fornecedor A</td>
+                                    <td>R$ 1,80/kg</td>
+                                </tr>
+                                <tr>
+                                    <td>19</td>
+                                    <td>Leite Condensado</td>
+                                    <td>15 latas</td>
+                                    <td>30/10/2023</td>
+                                    <td>Fornecedor C</td>
+                                    <td>R$ 4,50/lat</td>
+                                </tr>
+                                <tr>
+                                    <td>20</td>
+                                    <td>Geléia de Frutas</td>
+                                    <td>25 potes</td>
+                                    <td>15/10/2023</td>
+                                    <td>Fornecedor B</td>
+                                    <td>R$ 4,50/pot</td>
+                                </tr>
+                            </tbody>
                             </table>
                         </div>
                     </div>
